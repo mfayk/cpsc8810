@@ -58,19 +58,42 @@ void checkResult(const std::string &reference_file, const std::string &output_fi
 
 /* find the horizon through a simple and nonrobust method - use grayscale images */
 int find_horizon(int rows, int cols, int *img){
-    int prev_row_avg, curr_row_avg;
-    
+    float prev_row_avg = 0, curr_row_avg;
+    float diff = 0;
+    std::string outfile = "horizon.png";
+    int max_diff = 0;
+
     for(int i = 0; i < rows; i++){
+        curr_row_avg = 0;
         for(int j = 0; j < cols; j++){
             curr_row_avg += img[i * cols + j];
         }
-        if(((curr_row_avg / cols) - prev_row_avg) > 100) {
-            for (int k = 0; k < cols; k++){
-                img[i*cols+k] = 0;
-            }
-            return i;
+        if(i == 0) {
+            prev_row_avg = curr_row_avg / cols;
+            continue;
         }
+        curr_row_avg /= cols; cout << "row: " << i << ", curr avg: " << curr_row_avg << ", ";
+        diff = abs(curr_row_avg - prev_row_avg);
+        cout << "prev avg: " << prev_row_avg << ", diff: " << diff << "\n";
+        if(diff > 1 && i != 15) {
+            cout << "condition met.. return i: " << i << "\n";
+            for(int new_i = i-1; new_i < i+10 ; new_i++){
+                for (int k = 0; k < cols; k++){
+                    img[new_i * cols + k] = 255;
+                }
+            }
+            cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
+            cout << "write image" << endl;
+            bool suc_gpu = cv::imwrite(outfile.c_str(), horizon_img);
+            if(!suc_gpu){
+                std::cerr << "Couldn't write gpu image!\n";
+                exit(1);
+            }
+            #return i;
+        }
+        prev_row_avg = curr_row_avg;
     }
+    
 }
 
 
@@ -473,7 +496,7 @@ int main(int argc, char const *argv[]) {
     std::string outfile; 
     std::string reference;
     std::string outfile_shared; 
-
+    std::string gray;
 
     switch(argc){
         case 2:
@@ -495,8 +518,9 @@ int main(int argc, char const *argv[]) {
             break;
         default: 
                 std::cerr << "Usage ./gblur <in_image> <out_image> <reference_file> \n";
-                infile = "/gray_depth_img/_1.jpg";
-                outfile = "classified_gpu.png";
+                infile = "/home/mikailg/test/cpsc8810/gray_depth_img/_1.jpg";
+                outfile = "horizon.png";
+                gray = "grayconvert.png";
                 outfile_shared = "classified_gpu_shared.png";
                 reference = "classified_serial.png";
 
@@ -531,11 +555,37 @@ int main(int argc, char const *argv[]) {
     const size_t  numPixels = img.rows*img.cols; 
     int rows = img.rows;
     int cols = img.cols;
+    cout << "num cols: " << cols << endl;
     int grayImg[rows * cols];
     
     serial_grayscale(rows, cols, h_in_img, grayImg);
+    cv::Mat serial_img(rows, cols, CV_32SC1, (void*)grayImg); // generate gpu output image.
+    cout << "write image" << endl;
+    bool suc_gpu = cv::imwrite(gray.c_str(), serial_img);
+    if(!suc_gpu){
+        std::cerr << "Couldn't write gpu image!\n";
+        exit(1);
+    }
+    
     int horizon_row = find_horizon(rows, cols, grayImg);
-    cout << "horizon row found to be row: " << find_horizon;
+    
+    /*int flag=0;
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+            if (grayImg[i*cols+j] == 255){
+            cout << grayImg[i*cols+j] << " ";
+                flag = 1;
+            }
+        }
+        if(flag == 1){
+        cout << "i: " << i << endl;
+        }
+        
+        flag = 0;
+    }*/
+    cout << "horizon row found to be row: " << horizon_row << endl;
+
+
 
     int predictions[numPixels];
     vector<float> centroids[numclasses];
@@ -700,7 +750,7 @@ int main(int argc, char const *argv[]) {
     cout << "segment gpu" << endl;
     cv::Mat output_s_gpu(img.rows, img.cols, CV_8UC4, (void*)d_o_img); // generate gpu output image.
     cout << "write image" << endl;
-    bool suc_gpu = cv::imwrite(outfile.c_str(), output_s_gpu);
+    suc_gpu = cv::imwrite(outfile.c_str(), output_s_gpu);
     if(!suc_gpu){
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
