@@ -521,7 +521,7 @@ int main(int argc, char const *argv[]) {
     std::string path = "/home/mikailg/test/cpsc8810/gray_depth_img/ppt_images/";
     crop_imgs(path.c_str());
     
-/*
+
     
 //hello
     // preprocess 
@@ -674,9 +674,7 @@ int main(int argc, char const *argv[]) {
 
 //    serial_contrast( rows, cols, h_in_img);
     auto start = high_resolution_clock::now();
-    //serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
-    //serial_kmeans_contrast(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
-    //serial_kmeans_contrast_color(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
+    serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
     auto stop = high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
     printf("The execution time in microseconds for serial implementation: ");
@@ -702,10 +700,8 @@ int main(int argc, char const *argv[]) {
     serial_contrast(rows, cols, h_in_img, &GPU_contrast);
 
     start = high_resolution_clock::now();
-    //serial_contrast(rows, cols, h_in_img, &GPU_contrast);
      //std::cout << "made it1\n";
     your_kmeans(rows, cols, numclasses, predictions_gpu, centroids_gpu, h_in_img, max_its);
-    //your_kmeans_contrast(rows, cols, numclasses, predictions_gpu, centroids_gpu, h_in_img, max_its, GPU_contrast);
     stop = high_resolution_clock::now();
     duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
     printf("The execution time in microseconds for GPU implementation: ");
@@ -732,9 +728,7 @@ int main(int argc, char const *argv[]) {
     std::cout << "starting GPU k means shared...\n";
 
     start = high_resolution_clock::now();
-    //serial_contrast(rows, cols, h_in_img, &GPU_contrast);
     your_kmeans_shared(rows, cols, numclasses, predictions_gpu_shared, centroids_gpu_shared, h_in_img, max_its);
-    //your_kmeans_contrast_shared(rows, cols, numclasses, predictions_gpu_shared, centroids_gpu_shared, h_in_img, max_its, GPU_contrast);
     stop = high_resolution_clock::now();
     duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
     printf("The execution time in microseconds for GPU implementation: ");
@@ -752,7 +746,7 @@ int main(int argc, char const *argv[]) {
     if(!suc_gpu){
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
-    }*/
+    }
 
     return 0;
 }
