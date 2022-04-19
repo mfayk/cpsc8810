@@ -9,6 +9,7 @@
 #include <cmath> 
 #include <vector>
 #include <chrono> 
+#include <filesystem>
 using namespace std::chrono;
 
 #include "utils.h"
@@ -16,6 +17,7 @@ using namespace std::chrono;
 
 
 using namespace std;
+namespace fs=std::filesystem;
 
 /* 
  * Compute if the two images are correctly 
@@ -55,47 +57,6 @@ void checkResult(const std::string &reference_file, const std::string &output_fi
 
 
 }
-
-/* find the horizon through a simple and nonrobust method - use grayscale images */
-int find_horizon(int rows, int cols, int *img){
-    float prev_row_avg = 0, curr_row_avg;
-    float diff = 0;
-    std::string outfile = "horizon.png";
-    int max_diff = 0;
-
-    for(int i = 0; i < rows; i++){
-        curr_row_avg = 0;
-        for(int j = 0; j < cols; j++){
-            curr_row_avg += img[i * cols + j];
-        }
-        if(i == 0) {
-            prev_row_avg = curr_row_avg / cols;
-            continue;
-        }
-        curr_row_avg /= cols; cout << "row: " << i << ", curr avg: " << curr_row_avg << ", ";
-        diff = abs(curr_row_avg - prev_row_avg);
-        cout << "prev avg: " << prev_row_avg << ", diff: " << diff << "\n";
-        if(diff > 1 && i != 15) {
-            cout << "condition met.. return i: " << i << "\n";
-            for(int new_i = i-1; new_i < i+10 ; new_i++){
-                for (int k = 0; k < cols; k++){
-                    img[new_i * cols + k] = 255;
-                }
-            }
-            cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
-            cout << "write image" << endl;
-            bool suc_gpu = cv::imwrite(outfile.c_str(), horizon_img);
-            if(!suc_gpu){
-                std::cerr << "Couldn't write gpu image!\n";
-                exit(1);
-            }
-            #return i;
-        }
-        prev_row_avg = curr_row_avg;
-    }
-    
-}
-
 
 void serial_grayscale(int rows, int cols, uchar4 *h_img, int *grey_img){
     for(int i = 0; i < rows; i++)
@@ -477,6 +438,65 @@ void make_segment(int *predictions, uchar4 *o_img, int rows, int cols)
     }
 
 }
+/* find the horizon through a simple and nonrobust method - use grayscale images */
+int find_horizon(int rows, int cols, int *img, const std::string &outfile){
+    float prev_row_avg = 0, curr_row_avg;
+    float diff = 0;
+    std::string modded_outfile = std::string("_cropped") + outfile.c_str();
+
+    for(int i = 0; i < rows; i++){
+        curr_row_avg = 0;
+        for(int j = 0; j < cols; j++){
+            curr_row_avg += img[i * cols + j];
+        }
+        if(i == 0) {
+            prev_row_avg = curr_row_avg / cols;
+            continue;
+        }
+        curr_row_avg /= cols; //cout << "row: " << i << ", curr avg: " << curr_row_avg << ", ";
+        diff = abs(curr_row_avg - prev_row_avg);
+        //cout << "prev avg: " << prev_row_avg << ", diff: " << diff << "\n";
+        if(diff > 190 && i != 15 && i != (cols - 16)) {
+            //cout << "condition met.. return i: " << i << "\n";
+            for(int new_i = i-1; new_i < i+10 ; new_i++){
+                for (int k = 0; k < cols; k++){
+                    img[new_i * cols + k] = 255;
+                }
+            }
+            cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
+            cout << "write image" << endl;
+            bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
+            if(!suc_gpu){
+                std::cerr << "Couldn't write gpu image!\n";
+                exit(1);
+            }
+            return i;
+        }
+        prev_row_avg = curr_row_avg;
+    }
+    return -1;
+}
+
+void crop_imgs(const std::string path){
+    cv::Mat img, imgrgba;
+    uchar4 *h_in_img;
+    for (const auto & entry : std::filesystem::directory_iterator(path)){
+        cout << entry.path().string() << endl;
+        
+        img = cv::imread(entry.path().c_str(), cv::IMREAD_COLOR); 
+        if(img.empty()){
+            std::cerr << "Image file couldn't be read, exiting\n"; 
+            exit(1);
+        }
+        int rows = img.rows;
+        int cols = img.cols;
+        cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+        int grayImg[rows * cols];
+        serial_grayscale(rows, cols, h_in_img, grayImg);
+        int horizon_row = find_horizon(rows, cols, grayImg, entry.path().filename().string());
+    }
+}
 
 
 int main(int argc, char const *argv[]) {
@@ -497,34 +517,12 @@ int main(int argc, char const *argv[]) {
     std::string reference;
     std::string outfile_shared; 
     std::string gray;
-
-    switch(argc){
-        case 2:
-            infile = std::string(argv[1]);
-            outfile = "classified_gpu.png";
-            reference = "classified_serial.png";
-            outfile_shared = "classified_gpu_shared.png";
-        case 3:
-            infile = std::string(argv[1]);
-            outfile = std::string(argv[2]);
-            reference = "classified_serial.png";
-            outfile_shared = "classified_gpu_shared.png";
-            break;
-        case 4:
-            infile = std::string(argv[1]);
-            outfile = std::string(argv[2]);
-            reference = std::string(argv[3]);
-            outfile_shared = "classified_gpu_shared.png";
-            break;
-        default: 
-                std::cerr << "Usage ./gblur <in_image> <out_image> <reference_file> \n";
-                infile = "/home/mikailg/test/cpsc8810/gray_depth_img/_1.jpg";
-                outfile = "horizon.png";
-                gray = "grayconvert.png";
-                outfile_shared = "classified_gpu_shared.png";
-                reference = "classified_serial.png";
-
-   }
+    
+    std::string path = "/home/mikailg/test/cpsc8810/gray_depth_img/ppt_images/";
+    crop_imgs(path.c_str());
+    
+/*
+    
 //hello
     // preprocess 
     cv::Mat img = cv::imread(infile.c_str(), cv::IMREAD_COLOR); 
@@ -556,35 +554,6 @@ int main(int argc, char const *argv[]) {
     int rows = img.rows;
     int cols = img.cols;
     cout << "num cols: " << cols << endl;
-    int grayImg[rows * cols];
-    
-    serial_grayscale(rows, cols, h_in_img, grayImg);
-    cv::Mat serial_img(rows, cols, CV_32SC1, (void*)grayImg); // generate gpu output image.
-    cout << "write image" << endl;
-    bool suc_gpu = cv::imwrite(gray.c_str(), serial_img);
-    if(!suc_gpu){
-        std::cerr << "Couldn't write gpu image!\n";
-        exit(1);
-    }
-    
-    int horizon_row = find_horizon(rows, cols, grayImg);
-    
-    /*int flag=0;
-    for(int i = 0; i < rows; i++){
-        for(int j = 0; j < cols; j++){
-            if (grayImg[i*cols+j] == 255){
-            cout << grayImg[i*cols+j] << " ";
-                flag = 1;
-            }
-        }
-        if(flag == 1){
-        cout << "i: " << i << endl;
-        }
-        
-        flag = 0;
-    }*/
-    cout << "horizon row found to be row: " << horizon_row << endl;
-
 
 
     int predictions[numPixels];
@@ -608,7 +577,7 @@ int main(int argc, char const *argv[]) {
         }
     }
 
-        // Traversing of vectors v to print
+    // Traversing of vectors v to print
     // elements stored in it
     for (int i = 0; i < numclasses; i++) {
   
@@ -783,7 +752,7 @@ int main(int argc, char const *argv[]) {
     if(!suc_gpu){
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
-    }
+    }*/
 
     return 0;
 }
