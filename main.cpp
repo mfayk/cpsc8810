@@ -56,18 +56,35 @@ void checkResult(const std::string &reference_file, const std::string &output_fi
 
 }
 
-/*
+/* find the horizon through a simple and nonrobust method - use grayscale images */
+int find_horizon(int rows, int cols, int *img){
+    int prev_row_avg, curr_row_avg;
+    
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+            curr_row_avg += img[i * cols + j];
+        }
+        if(((curr_row_avg / cols) - prev_row_avg) > 100) {
+            for (int k = 0; k < cols; k++){
+                img[i*cols+k] = 0;
+            }
+            return i;
+        }
+    }
+}
+
+
 void serial_grayscale(int rows, int cols, uchar4 *h_img, int *grey_img){
     for(int i = 0; i < rows; i++)
         {
             for(int j = 0; j < cols; j++)
             {
-                gray_img[i*cols+j] = 0.0722*(float)h_img[i*cols+j].x + 0.7152*(float)h_img[i*cols+j].y + 0.2126*(float)h_img[i*cols+j].z;
+                grey_img[i*cols+j] = 0.0722*(float)h_img[i*cols+j].x + 0.7152*(float)h_img[i*cols+j].y + 0.2126*(float)h_img[i*cols+j].z;
             }
 
         }
 }
-*/
+
 
 //RMS Root Mean squared contrast
 //standard deviation of the pixel intensities
@@ -450,7 +467,7 @@ int main(int argc, char const *argv[]) {
 
     int classes[4] = {1,2,3,4};
 
-    cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img; 
+    cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray; 
 
     std::string infile; 
     std::string outfile; 
@@ -478,7 +495,7 @@ int main(int argc, char const *argv[]) {
             break;
         default: 
                 std::cerr << "Usage ./gblur <in_image> <out_image> <reference_file> \n";
-                infile = "meeting.jpg";
+                infile = "/gray_depth_img/_1.jpg";
                 outfile = "classified_gpu.png";
                 outfile_shared = "classified_gpu_shared.png";
                 reference = "classified_serial.png";
@@ -514,6 +531,11 @@ int main(int argc, char const *argv[]) {
     const size_t  numPixels = img.rows*img.cols; 
     int rows = img.rows;
     int cols = img.cols;
+    int grayImg[rows * cols];
+    
+    serial_grayscale(rows, cols, h_in_img, grayImg);
+    int horizon_row = find_horizon(rows, cols, grayImg);
+    cout << "horizon row found to be row: " << find_horizon;
 
     int predictions[numPixels];
     vector<float> centroids[numclasses];
@@ -635,7 +657,7 @@ int main(int argc, char const *argv[]) {
     auto start = high_resolution_clock::now();
     //serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
     //serial_kmeans_contrast(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
-    serial_kmeans_contrast_color(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
+    //serial_kmeans_contrast_color(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
     auto stop = high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
     printf("The execution time in microseconds for serial implementation: ");
@@ -643,13 +665,13 @@ int main(int argc, char const *argv[]) {
     printf("\n");
 
     //generate output image
-    make_segment(predictions, h_o_img, rows, cols);
-    cv::Mat output_s(img.rows, img.cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
-    bool suc = cv::imwrite(reference.c_str(), output_s);
-    if(!suc){
-        std::cerr << "Couldn't write serial image!\n";
-        exit(1);
-    }
+    //make_segment(predictions, h_o_img, rows, cols);
+    //cv::Mat output_s(img.rows, img.cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
+    //bool suc = cv::imwrite(reference.c_str(), output_s);
+    //if(!suc){
+        //std::cerr << "Couldn't write serial image!\n";
+        //exit(1);
+    //}
 
 
 
