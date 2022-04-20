@@ -440,9 +440,12 @@ void make_segment(int *predictions, uchar4 *o_img, int rows, int cols)
 }
 /* find the horizon through a simple and nonrobust method - use grayscale images */
 int find_horizon(int rows, int cols, int *img, const std::string &outfile){
+    cout << "rows: " << rows << ", cols: " << cols << endl;
     float prev_row_avg = 0, curr_row_avg;
     float diff = 0;
     std::string modded_outfile = std::string("_cropped") + outfile.c_str();
+    float max_diff = 0;
+    int i_max = 0;
 
     for(int i = 0; i < rows; i++){
         curr_row_avg = 0;
@@ -456,23 +459,26 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
         curr_row_avg /= cols; //cout << "row: " << i << ", curr avg: " << curr_row_avg << ", ";
         diff = abs(curr_row_avg - prev_row_avg);
         //cout << "prev avg: " << prev_row_avg << ", diff: " << diff << "\n";
-        if(diff > 190 && i != 15 && i != (cols - 16)) {
+        if(diff > 1 && i > 15 && i < 1185) {
             //cout << "condition met.. return i: " << i << "\n";
-            for(int new_i = i-1; new_i < i+10 ; new_i++){
-                for (int k = 0; k < cols; k++){
-                    img[new_i * cols + k] = 255;
-                }
+            if(diff > max_diff){
+                max_diff = diff;
+                i_max = i;
             }
-            cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
-            cout << "write image" << endl;
-            bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
-            if(!suc_gpu){
-                std::cerr << "Couldn't write gpu image!\n";
-                exit(1);
-            }
-            return i;
         }
         prev_row_avg = curr_row_avg;
+    }
+    cout << "max_i = " << i_max <<  endl;
+    for (int k = 0; k < cols; k++){
+        img[i_max * cols + k] = 255;
+    }
+
+    cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
+    cout << "write image" << endl;
+    bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
+    if(!suc_gpu){
+        std::cerr << "Couldn't write gpu image!\n";
+        exit(1);
     }
     return -1;
 }
