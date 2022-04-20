@@ -196,11 +196,11 @@ void make_segment(int *predictions, uchar4 *o_img, int rows, int cols)
 
 }
 /* find the horizon through a simple and nonrobust method - use grayscale images */
-int find_horizon(int rows, int cols, int *img, const std::string &outfile){
+int find_horizon(int rows, int cols, int *img){
     cout << "rows: " << rows << ", cols: " << cols << endl;
     float prev_row_avg = 0, curr_row_avg;
     float diff = 0;
-    std::string modded_outfile = std::string("_cropped") + outfile.c_str();
+//    std::string modded_outfile = std::string("_cropped") + outfile.c_str();
     float max_diff = 0;
     int i_max = 0;
 
@@ -230,6 +230,7 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
         img[i_max * cols + k] = 255;
     }
 
+/*
     cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
     cout << "write image" << endl;
     bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
@@ -237,7 +238,8 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
     }
-    return -1;
+    */
+    return i_max;
 }
 
 void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile){
@@ -267,26 +269,29 @@ void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<f
 }
 
 
-void crop_imgs(const std::string &outfile, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_in_img, int max_its){
+int crop_imgs(int rows, int cols, cv::Mat org_img){
     cv::Mat img, imgrgba;
+    uchar4 *h_in_img;
     cout << "start crop" << endl;
 
-        int rows = img.rows;
-        int cols = img.cols;
-        cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
-//        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
-        int grayImg[rows * cols];
-        serial_grayscale(rows, cols, h_in_img, grayImg);
-        int horizon_row = find_horizon(rows, cols, grayImg);
+    img = org_img;
+    cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+    h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+
+    int grayImg[rows * cols];
+    serial_grayscale(rows, cols, h_in_img, grayImg);
+    int horizon_row = find_horizon(rows, cols, grayImg);
+
+    cout << "horz row " << horizon_row << endl;
+	 
+	cv::Mat cropped_image = org_img(cv::Range(horizon_row,1200), cv::Range(0,1920));
+
+    org_img = cropped_image;
 	
-	cv::Mat cropped_image = img(cv::Range(horizon_row,1200), cv::Range(0,1920));	
-	cv::cvtColor(cropped_image, imgrgba, cv::COLOR_BGR2RGBA);
-	 h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);	
 
+    rows = rows - horizon_row;
 
-	gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
-	cout << "test 1"<< endl;	
-    
+    return rows;
 }
 
 void create_centroids(const std::string path){
@@ -325,11 +330,25 @@ void create_centroids(const std::string path){
             std::cerr << "Image file couldn't be read, exiting\n";
             exit(1);
         }
-	crop_imgs(path.c_str());
-	int rows = img.rows;
+
+
+	
+	
+    
+    int rows = img.rows;
         int cols = img.cols;
+
+
+    rows = crop_imgs(rows,cols,img);
+    cout << "cropped rows: " << endl;
+
+
         cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
         h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+
+        //CROPPING
+    
+
 
 
 ////////////////////////////////////////
@@ -339,7 +358,7 @@ void create_centroids(const std::string path){
 	//cv::cvtColor(img, r_out_img, cv::COLOR_BGR2RGBA);
 
     	o_img.create(img.rows, img.cols, CV_8UC4);
-	h_out_img.create(img.rows, img.cols, CV_8UC4);
+	    h_out_img.create(img.rows, img.cols, CV_8UC4);
     	h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
     	d_out_img.create(img.rows, img.cols, CV_8UC4);
     	r_out_img.create(img.rows, img.cols, CV_8UC4);
@@ -444,9 +463,11 @@ void create_centroids(const std::string path){
 ////////////////////////
 
 
-	gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());
+	//gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());
         cout << "test 1"<< endl;
 
+gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
+	cout << "test 1"<< endl;
 
 
     }
