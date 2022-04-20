@@ -70,7 +70,7 @@ void serial_grayscale(int rows, int cols, uchar4 *h_img, int *grey_img){
 }
 
 
-void serial_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, int *h_img, int max_its)
+void serial_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its)
 {
     vector<float> distances;
     int chosenclass;
@@ -196,7 +196,7 @@ void make_segment(int *predictions, uchar4 *o_img, int rows, int cols)
 
 }
 /* find the horizon through a simple and nonrobust method - use grayscale images */
-int find_horizon(int rows, int cols, int *img, const std::string &outfile){
+int find_horizon(int rows, int cols, int *img){
     float prev_row_avg = 0, curr_row_avg;
     float diff = 0;
     std::string modded_outfile = std::string("_cropped") + outfile.c_str();
@@ -234,15 +234,26 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
     return -1;
 }
 
-void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, int *h_img, int max_its){
+void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile){
 
-	serial_kmeans(rows, cols, numclasses, predictions, centroids, grayImg, max_its);
+	cv::Mat imrgba, o_img, h_out_img;
+	uchar4 *h_o_img, *h_i_img;
+	h_out_img.create(rows, cols, CV_8UC4);
+    	
+	h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+	std::string modded_outfile = std::string("_cropped") + outfile.c_str();
+
+
+	cout << "test 2" << endl;
+
+	serial_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
 
 	//generate output image
     
 	make_segment(predictions, h_o_img, rows, cols);
-	cv::Mat output_s(img.rows, img.cols, CV_32SC1, (void*)h_o_img); // generate serial output image.
-    	bool suc = cv::imwrite(reference.c_str(), output_s);
+	cv::Mat output_s(rows, cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
+	cout << "write image" << endl;
+    	bool suc = cv::imwrite(modded_outfile.c_str(), output_s);
     	if(!suc){
         	std::cerr << "Couldn't write serial image!\n";
         	exit(1);
@@ -250,160 +261,145 @@ void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<f
 }
 
 
-void crop_imgs(const std::string path, int numclasses, int *predictions, vector<float> *centroids, int max_its){
+void crop_imgs(const std::string &outfile, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_in_img, int max_its){
     cv::Mat img, imgrgba;
-    uchar4 *h_in_img;
-    for (const auto & entry : std::filesystem::directory_iterator(path)){
-        cout << entry.path().string() << endl;
-        
-        img = cv::imread(entry.path().c_str(), cv::IMREAD_COLOR); 
-        if(img.empty()){
-            std::cerr << "Image file couldn't be read, exiting\n"; 
-            exit(1);
-        }
+    cout << "start crop" << endl;
+
         int rows = img.rows;
         int cols = img.cols;
         cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
-        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+//        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
         int grayImg[rows * cols];
         serial_grayscale(rows, cols, h_in_img, grayImg);
-        int horizon_row = find_horizon(rows, cols, grayImg, entry.path().filename().string());
-	gray_segment(rows, cols, numclasses, predictions, centroids, grayImg, max_its);	
+        int horizon_row = find_horizon(rows, cols, grayImg);
 	
-    }
+	cv::Mat cropped_image = img(cv::Range(horizon_row,1200), cv::Range(0,1920));	
+	cv::cvtColor(cropped_image, imgrgba, cv::COLOR_BGR2RGBA);
+	 h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);	
+
+
+	gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
+	cout << "test 1"<< endl;	
+    
 }
 
+void create_centroids(const std::string path){
 
-int main(int argc, char const *argv[]) {
-   
+    cv::Mat img, imgrgba;
+    cout << "start files" << endl;
+ //////////////////////////////   
     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers  
     uchar4 *d_in_img, *d_o_img;
-    uchar4 *h_o_img_gpu, *h_o_img_gpu_shared; 
+    uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
 
-    int numclasses = 4;
-    int max_its = 100;
+    int numclasses = 2;
+    int max_its = 50;
 
-    int classes[4] = {1,2,3,4};
+    int classes[2] = {1,2};
 
-    cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray; 
+    cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray;
 
-    std::string infile; 
-    std::string outfile; 
+    std::string infile;
+    std::string outfile;
     std::string reference;
-    std::string outfile_shared; 
+    std::string outfile_shared;
     std::string gray;
     
-    std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
-    crop_imgs(path.c_str(),numclasses,predictions,centroids,max_its);
     
-
+ //////////////////
     
-//hello
-    // preprocess 
-    cv::Mat img = cv::imread(infile.c_str(), cv::IMREAD_COLOR); 
-    if(img.empty()){
-        std::cerr << "Image file couldn't be read, exiting\n"; 
-        exit(1);
-    }
-
-    cv::cvtColor(img, imrgba, cv::COLOR_BGR2RGBA);
-    //cv::cvtColor(img, h_out_img, cv::COLOR_BGR2RGBA);
-    //cv::cvtColor(img, r_out_img, cv::COLOR_BGR2RGBA);
-
-    o_img.create(img.rows, img.cols, CV_8UC4); 
-    h_out_img.create(img.rows, img.cols, CV_8UC4);
-    h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
-    d_out_img.create(img.rows, img.cols, CV_8UC4);
-    r_out_img.create(img.rows, img.cols, CV_8UC4);
-    h_out_img_gpu.create(img.rows, img.cols, CV_8UC4);
-    h_out_img_gpu_shared.create(img.rows, img.cols, CV_8UC4);
     
-    h_in_img = (uchar4 *)imrgba.ptr<unsigned char>(0);
-    h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
-    h_o_shared = (uchar4 *)h_out_img_shared.ptr<unsigned char>(0);
-    d_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
-    h_o_img_gpu = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
-    h_o_img_gpu_shared = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
+    for (const auto & entry : std::filesystem::directory_iterator(path)){
 
-    const size_t  numPixels = img.rows*img.cols; 
-    int rows = img.rows;
-    int cols = img.cols;
-    cout << "num cols: " << cols << endl;
+	cout << entry.path().string() << endl;
 
-
-    int predictions[numPixels];
-    vector<float> centroids[numclasses];
-    int rand_class;
-
-    int predictions_gpu[numPixels];
-    vector<float> centroids_gpu[numclasses];
-
-    int predictions_gpu_shared[numPixels];
-    vector<float> centroids_gpu_shared[numclasses];
-
-
-    for(int i = 0; i < numclasses; i++)
-    {
-        for(int j = 0; j < 4; j++)
-        {
-            centroids[i].push_back(0.0);
-            centroids_gpu[i].push_back(0.0);
-            centroids_gpu_shared[i].push_back(0.0);
+        img = cv::imread(entry.path().c_str(), cv::IMREAD_COLOR);
+        cout << " read img "<< endl;
+        if(img.empty()){
+            std::cerr << "Image file couldn't be read, exiting\n";
+            exit(1);
         }
-    }
+	crop_imgs(path.c_str());
+	int rows = img.rows;
+        int cols = img.cols;
+        cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
 
-    // Traversing of vectors v to print
-    // elements stored in it
-    for (int i = 0; i < numclasses; i++) {
-  
-        cout << "Elements at index "
-             << i << ": ";
-  
-        // Displaying element at each column,
-        // begin() is the starting iterator,
-        // end() is the ending iterator
-        for (auto it = centroids[i].begin();
-             it != centroids[i].end(); it++) {
-  
-            // (*it) is used to get the
-            // value at iterator is
-            // pointing
-            cout << *it << ' ';
-        }
-        cout << endl;
-    }
 
-    std::cout << "created vectors..\n";
+////////////////////////////////////////
 
-    std::cout << "Image rows: " << rows << "image cols: " << cols << "\n";
+	cv::cvtColor(img, imrgba, cv::COLOR_BGR2RGBA);
+    	//cv::cvtColor(img, h_out_img, cv::COLOR_BGR2RGBA);
+	//cv::cvtColor(img, r_out_img, cv::COLOR_BGR2RGBA);
 
-    //set up initital predicitons for each pixel
-    srand(time(0));
-    int g_class;
-    for(int i = 0; i < rows; i++)
-    {
-        for(int j = 0; j < cols; j++)
-        {
-            // if(h_in_img[i*cols+j].y > 100  && h_in_img[i*cols+j].z < 60)
-            //     predictions[i*cols+j] = g_class = 0; //green
-            // else if(h_in_img[i*cols+j].x < 50  && h_in_img[i*cols+j].z > 100)
-            //     predictions[i*cols+j] = g_class = 1; //blue
-            // else
-            //     predictions[i*cols+j] = g_class = 2; //white
-            // //std::cout << "Updating class number: " << rand_class << "\n";
-            // centroids[g_class].at(0) += h_in_img[i*cols+j].x;
-            // centroids[g_class].at(1) += h_in_img[i*cols+j].y;
-            // centroids[g_class].at(2) += h_in_img[i*cols+j].z;
-            // centroids[g_class].at(3) += 1;
+    	o_img.create(img.rows, img.cols, CV_8UC4);
+	h_out_img.create(img.rows, img.cols, CV_8UC4);
+    	h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
+    	d_out_img.create(img.rows, img.cols, CV_8UC4);
+    	r_out_img.create(img.rows, img.cols, CV_8UC4);
+    	h_out_img_gpu.create(img.rows, img.cols, CV_8UC4);
+    	h_out_img_gpu_shared.create(img.rows, img.cols, CV_8UC4);
 
+    	h_in_img = (uchar4 *)imrgba.ptr<unsigned char>(0);
+    	h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+    	h_o_shared = (uchar4 *)h_out_img_shared.ptr<unsigned char>(0);
+    	d_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+    	h_o_img_gpu = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
+    	h_o_img_gpu_shared = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
+
+    	const size_t  numPixels = img.rows*img.cols;
+    //	int rows = img.rows;
+    	//int cols = img.cols;
+    	cout << "num cols: " << cols << endl;
+
+
+	int predictions[numPixels];
+    	vector<float> centroids[numclasses];
+    	int rand_class;
+
+    	int predictions_gpu[numPixels];
+    	vector<float> centroids_gpu[numclasses];
+
+    	int predictions_gpu_shared[numPixels];
+    	vector<float> centroids_gpu_shared[numclasses];
+
+
+	for(int i = 0; i < numclasses; i++){
+        	for(int j = 0; j < 4; j++){
+            		centroids[i].push_back(0.0);
+            		centroids_gpu[i].push_back(0.0);
+            		centroids_gpu_shared[i].push_back(0.0);
+        	}
+    	}
+
+    	// Traversing of vectors v to print
+    	// elements stored in it
+    	for(int i = 0; i < numclasses; i++) {
+        	for(auto it = centroids[i].begin();
+             		it != centroids[i].end(); it++) {
+	        }
+    	}
+
+
+
+
+
+
+
+  	//set up initital predicitons for each pixel
+	////////////////////////////////////////////////////////////////////////////////////
+	//PREDICTIONS
+    	srand(time(0));
+    	int g_class;
+    	for(int i = 0; i < rows; i++){
+        	for(int j = 0; j < cols; j++){
             g_class = (float)(rand() % 2 + 0);
             predictions[i*img.cols+j] = g_class;
-            //std::cout << "Updating class number: " << rand_class << "\n";
+
             centroids[g_class].at(0) += h_in_img[i*cols+j].x;
             centroids[g_class].at(1) += h_in_img[i*cols+j].y;
             centroids[g_class].at(2) += h_in_img[i*cols+j].z;
             centroids[g_class].at(3) += 1;
-
 
             centroids_gpu[g_class].at(0) = centroids[g_class].at(0);
             centroids_gpu[g_class].at(1) = centroids[g_class].at(1);
@@ -415,37 +411,56 @@ int main(int argc, char const *argv[]) {
             centroids_gpu_shared[g_class].at(2) = centroids[g_class].at(2);
             centroids_gpu_shared[g_class].at(3) = centroids[g_class].at(3);
 
+        	}
+    	}
+
+////////////////////////////////////////////////////////////////////////////////
 
 
-        }
-    }
+	// Traversing of vectors v to print
+    	// elements stored in it
+    	for (int i = 0; i < numclasses; i++) {
+        	// Displaying element at each column,
+        	// begin() is the starting iterator,
+        	// end() is the ending iterator
+        	for (auto it = centroids[i].begin();
+             	it != centroids[i].end(); it++) {
 
-    // Traversing of vectors v to print
-    // elements stored in it
-    for (int i = 0; i < numclasses; i++) {
-  
-        cout << "Elements at index "
-             << i << ": ";
-  
-        // Displaying element at each column,
-        // begin() is the starting iterator,
-        // end() is the ending iterator
-        for (auto it = centroids[i].begin();
-             it != centroids[i].end(); it++) {
-  
             // (*it) is used to get the
-            // value at iterator is
-            // pointing
-            cout << *it << ' ';
-        }
-        cout << endl;serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
-    }
+            // value at iterator it
+        	}
+    	}
 
 
     //MIKALIA YOUR CODE HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    crop_imgs(path.c_str(),numclasses,predictions,centroids,max_its);
+    //crop_imgs(path.c_str(),numclasses,predictions,centroids,h_in_img,max_its);
 
-/*
+////////////////////////
+
+
+	gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());
+        cout << "test 1"<< endl;
+
+
+
+    }
+}
+
+int main(int argc, char const *argv[]) {
+
+    std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
+    create_centroids(path.c_str());
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	    /*
     std::cout << "starting serial k means...\n";
 
     //(int rows, int cols, int numclasses, int *predictions, vector<float> *centroidInfo)
