@@ -70,7 +70,7 @@ void serial_grayscale(int rows, int cols, uchar4 *h_img, int *grey_img){
 }
 
 
-void serial_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its)
+void serial_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, int *h_img, int max_its)
 {
     vector<float> distances;
     int chosenclass;
@@ -221,12 +221,12 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
                 }
             }
             cv::Mat horizon_img(rows, cols, CV_32SC1, (void*)img);
-            cout << "write image" << endl;
-            bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
-            if(!suc_gpu){
-                std::cerr << "Couldn't write gpu image!\n";
-                exit(1);
-            }
+            //cout << "write image" << endl;
+            //bool suc_gpu = cv::imwrite(modded_outfile.c_str(), horizon_img);
+            //if(!suc_gpu){
+            //    std::cerr << "Couldn't write gpu image!\n";
+            //    exit(1);
+            //}
             return i;
         }
         prev_row_avg = curr_row_avg;
@@ -234,7 +234,23 @@ int find_horizon(int rows, int cols, int *img, const std::string &outfile){
     return -1;
 }
 
-void crop_imgs(const std::string path){
+void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, int *h_img, int max_its){
+
+	serial_kmeans(rows, cols, numclasses, predictions, centroids, grayImg, max_its);
+
+	//generate output image
+    
+	make_segment(predictions, h_o_img, rows, cols);
+	cv::Mat output_s(img.rows, img.cols, CV_32SC1, (void*)h_o_img); // generate serial output image.
+    	bool suc = cv::imwrite(reference.c_str(), output_s);
+    	if(!suc){
+        	std::cerr << "Couldn't write serial image!\n";
+        	exit(1);
+    	}
+}
+
+
+void crop_imgs(const std::string path, int numclasses, int *predictions, vector<float> *centroids, int max_its){
     cv::Mat img, imgrgba;
     uchar4 *h_in_img;
     for (const auto & entry : std::filesystem::directory_iterator(path)){
@@ -252,6 +268,8 @@ void crop_imgs(const std::string path){
         int grayImg[rows * cols];
         serial_grayscale(rows, cols, h_in_img, grayImg);
         int horizon_row = find_horizon(rows, cols, grayImg, entry.path().filename().string());
+	gray_segment(rows, cols, numclasses, predictions, centroids, grayImg, max_its);	
+	
     }
 }
 
@@ -275,8 +293,8 @@ int main(int argc, char const *argv[]) {
     std::string outfile_shared; 
     std::string gray;
     
-    std::string path = "/home/mikailg/test/cpsc8810/gray_depth_img/ppt_images/";
-    crop_imgs(path.c_str());
+    std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
+    crop_imgs(path.c_str(),numclasses,predictions,centroids,max_its);
     
 
     
@@ -420,9 +438,14 @@ int main(int argc, char const *argv[]) {
             // pointing
             cout << *it << ' ';
         }
-        cout << endl;
+        cout << endl;serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
     }
 
+
+    //MIKALIA YOUR CODE HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    crop_imgs(path.c_str(),numclasses,predictions,centroids,max_its);
+
+/*
     std::cout << "starting serial k means...\n";
 
     //(int rows, int cols, int numclasses, int *predictions, vector<float> *centroidInfo)
@@ -454,7 +477,6 @@ int main(int argc, char const *argv[]) {
     std::cout << "starting GPU k means...\n";
 
     float GPU_contrast = 0.0;
-    serial_contrast(rows, cols, h_in_img, &GPU_contrast);
 
     start = high_resolution_clock::now();
      //std::cout << "made it1\n";
@@ -504,7 +526,7 @@ int main(int argc, char const *argv[]) {
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
     }
-
+*/
     return 0;
 }
 
