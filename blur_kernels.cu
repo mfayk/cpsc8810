@@ -4,7 +4,7 @@
 using namespace std;
 
 
-#define BLOCK 32
+#define BLOCK 8
 #define TILE_WIDTH 40
 
 //test

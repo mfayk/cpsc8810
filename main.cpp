@@ -253,8 +253,22 @@ void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<f
 
 
 	cout << "test 2" << endl;
+//SERIAL
+	//serial_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
 
-	serial_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
+//SHARED MEMORY
+    std::cout << "starting GPU k means shared...\n";
+
+    
+    your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its);
+
+
+    //generate output image
+
+
+/////////////////////////////////////////
+
+
 
 	//generate output image
     
@@ -303,10 +317,10 @@ void create_centroids(const std::string path){
     uchar4 *d_in_img, *d_o_img;
     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
 
-    int numclasses = 2;
+    int numclasses = 4;
     int max_its = 50;
 
-    int classes[2] = {1,2};
+    int classes[4] = {1,2};
 
     cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray;
 
@@ -338,6 +352,7 @@ void create_centroids(const std::string path){
     int rows = img.rows;
         int cols = img.cols;
 
+    auto start = high_resolution_clock::now();
 
     rows = crop_imgs(rows,cols,img);
     cout << "cropped rows: " << endl;
@@ -466,8 +481,17 @@ void create_centroids(const std::string path){
 	//gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());
         cout << "test 1"<< endl;
 
+        
+
 gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
 	cout << "test 1"<< endl;
+
+    auto stop = high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
+    printf("The execution time in microseconds for GPU implementation: ");
+    std::cout << duration;
+    printf("\n");
+
 
 
     }
