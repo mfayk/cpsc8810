@@ -204,6 +204,27 @@ void k_operations(int rows, int cols, int numclasses, float *centroids,  int *ne
   }
 }  
 
+__global__
+void starting_predictions(int rows, int cols, int *predictions, uchar4 *img){
+  int x = blockIdx.x * blockDim.x + threadIdx.x;
+  int y = blockIdx.y * blockDim.y + threadIdx.y;
+  int index;
+
+  if(x < cols && y < rows)
+	{
+    index = y * cols + x;
+    unsigned char r = img[index].x; 
+		unsigned char g = img[index].y;
+		unsigned char b = img[index].z;
+		
+		int grey_pixel = 0.224f*r + 0.587f*g + 0.111*b;
+
+		if(grey_pixel > 155)
+      predictions[index] = 1;
+    else
+      predictions[index] = 0;
+	}
+}
 
 
 void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its){
@@ -269,8 +290,10 @@ void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<fl
 
   checkCudaErrors(cudaMemcpy(d_img, h_img, sizeof(uchar4)*rows*cols, cudaMemcpyHostToDevice)); 
   checkCudaErrors(cudaMemcpy(centroids_d, centroids_arr, sizeof(float)*4*numclasses, cudaMemcpyHostToDevice));
-  checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
+  //checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
 
+
+  starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img);
   cout << "loop start gpu" << endl;
 
     for(count=0; count<iterations; count++)
