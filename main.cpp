@@ -445,11 +445,11 @@ void create_centroids(const std::string path, int block_size){
 
     gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string(),block_size);	
 
-    auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();ofstream stats;
+    auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
     cout << "timing: " << stop << endl; 
     std::ofstream stats;
     stats.open("metrics.txt", ios::out | ios::app);
-    stats << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
+    stats << "GPU," << rows << "," << cols << "," << block_size << "," << stop << endl;
     stats.close();
     }
 }
