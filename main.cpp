@@ -309,7 +309,7 @@ int crop_imgs(int rows, int cols, cv::Mat org_img){
     return rows;
 }
 
-void create_centroids(const std::string path){
+void create_centroids(const std::string path, int block_size){
 
     cv::Mat img, imgrgba;
     cout << "start files" << endl;
@@ -346,9 +346,6 @@ void create_centroids(const std::string path){
             exit(1);
         }
 
-
-	
-	
     
     int rows = img.rows;
     int cols = img.cols;
@@ -362,19 +359,10 @@ void create_centroids(const std::string path){
     cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
     h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
 
-        //CROPPING
-    
-
-
-
-////////////////////////////////////////
-
 	cv::cvtColor(img, imrgba, cv::COLOR_BGR2RGBA);
-    	//cv::cvtColor(img, h_out_img, cv::COLOR_BGR2RGBA);
-	//cv::cvtColor(img, r_out_img, cv::COLOR_BGR2RGBA);
 
     	o_img.create(img.rows, img.cols, CV_8UC4);
-	    h_out_img.create(img.rows, img.cols, CV_8UC4);
+	h_out_img.create(img.rows, img.cols, CV_8UC4);
     	h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
     	d_out_img.create(img.rows, img.cols, CV_8UC4);
     	r_out_img.create(img.rows, img.cols, CV_8UC4);
@@ -389,8 +377,6 @@ void create_centroids(const std::string path){
     	h_o_img_gpu_shared = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
 
     	const size_t  numPixels = img.rows*img.cols;
-    //	int rows = img.rows;
-    	//int cols = img.cols;
     	cout << "num cols: " << cols << endl;
 
 
@@ -404,6 +390,8 @@ void create_centroids(const std::string path){
     	int predictions_gpu_shared[numPixels];
     	vector<float> centroids_gpu_shared[numclasses];
 
+
+	/*
 
 	for(int i = 0; i < numclasses; i++){
         	for(int j = 0; j < 4; j++){
@@ -420,12 +408,6 @@ void create_centroids(const std::string path){
              		it != centroids[i].end(); it++) {
 	        }
     	}
-
-
-
-
-
-
 
   	//set up initital predicitons for each pixel
 	////////////////////////////////////////////////////////////////////////////////////
@@ -445,9 +427,6 @@ void create_centroids(const std::string path){
         	}
     	}
 
-////////////////////////////////////////////////////////////////////////////////
-
-
 	// Traversing of vectors v to print
     	// elements stored in it
     	for (int i = 0; i < numclasses; i++) {
@@ -462,22 +441,12 @@ void create_centroids(const std::string path){
         	}
     	}
 
-
-    //MIKALIA YOUR CODE HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    //crop_imgs(path.c_str(),numclasses,predictions,centroids,h_in_img,max_its);
-
-////////////////////////
-
-
-	//gray_segment(rows-horizon_row, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());
-        cout << "test 1"<< endl;
-
-        
+        */
 
     gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
-	cout << "test 1"<< endl;
 
     auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();ofstream stats;
+    cout << "timing: " << stop << endl; 
     stats.open ("metrics.txt");
 	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
     stats << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
@@ -489,7 +458,7 @@ int main(int argc, char const *argv[]) {
 
     std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
     int block_size = atoi(argv[1]);
-    create_centroids(path.c_str(), blockSize);
+    create_centroids(path.c_str(),block_size);
     int rows, cols, numClasses;
 
     return 0;
