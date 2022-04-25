@@ -447,8 +447,8 @@ void create_centroids(const std::string path, int block_size){
 
     auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();ofstream stats;
     cout << "timing: " << stop << endl; 
-    stats.open ("metrics.txt");
-	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
+    std::ofstream stats;
+    stats.open("metrics.txt", ios::out | ios::app);
     stats << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
     stats.close();
     }
