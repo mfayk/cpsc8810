@@ -243,7 +243,7 @@ int find_horizon(int rows, int cols, int *img){
     return i_max;
 }
 
-void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile){
+void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile, int block){
 
 	cv::Mat imrgba, o_img, h_out_img;
 	uchar4 *h_o_img, *h_i_img;
@@ -261,7 +261,7 @@ void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<f
     std::cout << "starting GPU k means shared...\n";
 
     
-    your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its);
+    your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its, block);
     //your_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
 
     //generate output image
@@ -443,7 +443,7 @@ void create_centroids(const std::string path, int block_size){
 
         */
 
-    gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
+    gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string(),block_size);	
 
     auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();ofstream stats;
     cout << "timing: " << stop << endl; 

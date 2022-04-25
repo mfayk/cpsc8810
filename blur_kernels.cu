@@ -234,7 +234,7 @@ void starting_predictions(int rows, int cols, int *predictions, uchar4 *img, flo
   }
 }
 
-void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its){
+void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, int block){
 
   vector<float> distances;
   int new_predictions[rows*cols];
@@ -252,8 +252,8 @@ void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<fl
 
   int iterations = max_its;
 
-  dim3 blockSize(BLOCK,BLOCK,1);
-  dim3 gridSize(ceil(cols/BLOCK)+1,ceil(rows/BLOCK)+1,1);
+  dim3 blockSize(block,block,1);
+  dim3 gridSize(ceil(cols/block)+1,ceil(rows/block)+1,1);
 
 
   float *centroids_arr;
@@ -341,7 +341,7 @@ free(homogeneous_h);
 
 }
 
- void your_kmeans_shared(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its){
+ void your_kmeans_shared(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its,int block){
 
     vector<float> distances;
   int new_predictions[rows*cols];
@@ -359,8 +359,12 @@ free(homogeneous_h);
 
   int iterations = max_its;
 
-  dim3 blockSize(BLOCK,BLOCK,1);
-  dim3 gridSize(ceil(cols/BLOCK)+1,ceil(rows/BLOCK)+1,1);
+  //dim3 blockSize(BLOCK,BLOCK,1);
+  //dim3 gridSize(ceil(cols/BLOCK)+1,ceil(rows/BLOCK)+1,1);
+
+  dim3 blockSize(block,block,1);
+  dim3 gridSize(ceil(cols/block)+1,ceil(rows/block)+1,1);
+
 
 
   float *centroids_arr;
@@ -370,7 +374,7 @@ free(homogeneous_h);
   centroids_arr = (float*)malloc(4*numclasses*sizeof(float));
   homogeneous_h = (bool *)malloc(sizeof(bool));
   *homogeneous_h = false;
-
+/*
   for (int i = 0; i < numclasses; i++) {  
     cout << "Elements at index "
          << i << ": ";
@@ -394,7 +398,7 @@ free(homogeneous_h);
     }
        cout << endl;
 }
-
+*/
 
   checkCudaErrors(cudaMalloc((void**)&predictions_d, sizeof(int)*rows*cols));
   checkCudaErrors(cudaMalloc((void**)&centroids_d, sizeof(float)*numclasses*4));
