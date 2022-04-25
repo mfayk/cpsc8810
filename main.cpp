@@ -351,7 +351,7 @@ void create_centroids(const std::string path){
 	
     
     int rows = img.rows;
-        int cols = img.cols;
+    int cols = img.cols;
 
     auto start = high_resolution_clock::now();
 
@@ -359,8 +359,8 @@ void create_centroids(const std::string path){
     cout << "cropped rows: " << endl;
 
 
-        cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
-        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+    cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+    h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
 
         //CROPPING
     
@@ -474,111 +474,24 @@ void create_centroids(const std::string path){
 
         
 
-gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
+    gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string());	
 	cout << "test 1"<< endl;
 
-    auto stop = high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
-    printf("The execution time in microseconds for GPU implementation: ");
-    std::cout << duration;
-    printf("\n");
-
-
-
+    auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();ofstream stats;
+    stats.open ("metrics.txt");
+	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
+    stats << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
+    stats.close();
     }
 }
 
 int main(int argc, char const *argv[]) {
 
     std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
-    create_centroids(path.c_str());
     int block_size = atoi(argv[1]);
+    create_centroids(path.c_str(), blockSize);
     int rows, cols, numClasses;
 
-    	
-	
-    std::cout << "starting GPU k means shared...\n";
-
-    auto start = high_resolution_clock::now();
-    your_kmeans_shared(rows, cols, numclasses, predictions_gpu_shared, centroids_gpu_shared, h_in_img, max_its);
-    auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
-
-    //generate output image
-    cout << "make segment gpu" << endl;
-    make_segment(predictions_gpu_shared, h_o_shared, rows, cols);
-    cout << "segment gpu" << endl;
-    cv::Mat output_s_gpu_shared(img.rows, img.cols, CV_8UC4, (void*)h_o_shared); // generate gpu output image.
-    cout << "write image" << endl;
-    bool suc_gpu_shared = cv::imwrite(outfile_shared.c_str(), output_s_gpu_shared);
-    if(!suc_gpu){
-        std::cerr << "Couldn't write gpu image!\n";
-        exit(1);
-    }
-	
-	
-    ofstream stats;
-    stats.open ("metrics.txt");
-	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
-    stats << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
-    stats.close();
-	
-	
-	
-	    /*
-    std::cout << "starting serial k means...\n";
-
-    //(int rows, int cols, int numclasses, int *predictions, vector<float> *centroidInfo)
-
-
-
-//    serial_contrast( rows, cols, h_in_img);
-    auto start = high_resolution_clock::now();
-    serial_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its);
-    auto stop = high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
-    printf("The execution time in microseconds for serial implementation: ");
-    std::cout << duration;
-    printf("\n");
-
-    //generate output image
-    //make_segment(predictions, h_o_img, rows, cols);
-    //cv::Mat output_s(img.rows, img.cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
-    //bool suc = cv::imwrite(reference.c_str(), output_s);
-    //if(!suc){
-        //std::cerr << "Couldn't write serial image!\n";
-        //exit(1);
-    //}
-
-
-
-
-    
-    std::cout << "starting GPU k means...\n";
-
-    float GPU_contrast = 0.0;
-
-    start = high_resolution_clock::now();
-     //std::cout << "made it1\n";
-    your_kmeans(rows, cols, numclasses, predictions_gpu, centroids_gpu, h_in_img, max_its);
-    stop = high_resolution_clock::now();
-    duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
-    printf("The execution time in microseconds for GPU implementation: ");
-    std::cout << duration;
-    printf("\n");
-
-    //generate output image
-
-    cout << "make segment gpu" << endl;
-    make_segment(predictions_gpu, d_o_img, rows, cols);
-    cout << "segment gpu" << endl;
-    cv::Mat output_s_gpu(img.rows, img.cols, CV_8UC4, (void*)d_o_img); // generate gpu output image.
-    cout << "write image" << endl;
-    suc_gpu = cv::imwrite(outfile.c_str(), output_s_gpu);
-    if(!suc_gpu){
-        std::cerr << "Couldn't write gpu image!\n";
-        exit(1);
-    }
-*/
     return 0;
 }
 
