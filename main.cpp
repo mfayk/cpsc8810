@@ -260,8 +260,8 @@ void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<f
     std::cout << "starting GPU k means shared...\n";
 
     
-    //your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its);
-    your_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
+    your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its);
+    //your_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
 
     //generate output image
 
@@ -317,10 +317,10 @@ void create_centroids(const std::string path){
     uchar4 *d_in_img, *d_o_img;
     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
 
-    int numclasses = 4;
+    int numclasses = 2;
     int max_its = 50;
 
-    int classes[4] = {1,2};
+    int classes[2] = {1,2};
 
     cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray;
 
