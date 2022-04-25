@@ -4,7 +4,7 @@
 using namespace std;
 
 
-#define BLOCK 4
+#define BLOCK 32
 #define TILE_WIDTH 40
 
 //test
@@ -290,10 +290,10 @@ void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<fl
 
   checkCudaErrors(cudaMemcpy(d_img, h_img, sizeof(uchar4)*rows*cols, cudaMemcpyHostToDevice)); 
   checkCudaErrors(cudaMemcpy(centroids_d, centroids_arr, sizeof(float)*4*numclasses, cudaMemcpyHostToDevice));
-  //checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
+  checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
 
 
-  starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img);
+  //starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img);
   cout << "loop start gpu" << endl;
 
     for(count=0; count<iterations; count++)
@@ -397,8 +397,9 @@ free(homogeneous_h);
 
   checkCudaErrors(cudaMemcpy(d_img, h_img, sizeof(uchar4)*rows*cols, cudaMemcpyHostToDevice)); 
   checkCudaErrors(cudaMemcpy(centroids_d, centroids_arr, sizeof(float)*4*numclasses, cudaMemcpyHostToDevice));
-  checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
+  //checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
 
+  starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img);
   cout << "loop start gpu" << endl;
 
     for(count=0; count<iterations; count++)
