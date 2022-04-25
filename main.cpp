@@ -491,13 +491,19 @@ int main(int argc, char const *argv[]) {
 
     std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
     create_centroids(path.c_str());
-
+    char path[100], stats_file[50];
+    int block_size = atoi(argv[3]);
+    sscanf(argv[2], "%s", path);
+    sscanf(argv[1], "%s", stats_file);
 	
 	
 	
 	
 	
-	
+    FILE *output = fopen(stats_file, "a");
+    if(outfile == NULL)
+	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
+    outfile << "GPU," << rows << "," << cols << "," << "," << block_size << "," << duration << endl;
 	
 	
 	
