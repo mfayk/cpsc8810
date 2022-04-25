@@ -491,13 +491,36 @@ int main(int argc, char const *argv[]) {
 
     std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
     create_centroids(path.c_str());
+    char path[100], stats_file[50];
+    int block_size = atoi(argv[3]);
+    sscanf(argv[2], "%s", path);
+    sscanf(argv[1], "%s", stats_file);
+	
+	
+	std::cout << "starting GPU k means shared...\n";
 
+    start = high_resolution_clock::now();
+    //your_kmeans_shared(rows, cols, numclasses, predictions_gpu_shared, centroids_gpu_shared, h_in_img, max_its);
+    stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
+
+    //generate output image
+    cout << "make segment gpu" << endl;
+    //make_segment(predictions_gpu_shared, h_o_shared, rows, cols);
+    cout << "segment gpu" << endl;
+    //cv::Mat output_s_gpu_shared(img.rows, img.cols, CV_8UC4, (void*)h_o_shared); // generate gpu output image.
+    cout << "write image" << endl;
+    /*bool suc_gpu_shared = cv::imwrite(outfile_shared.c_str(), output_s_gpu_shared);
+    if(!suc_gpu){
+        std::cerr << "Couldn't write gpu image!\n";
+        exit(1);
+    }*/
 	
 	
-	
-	
-	
-	
+    FILE *outfile = fopen(stats_file, "a");
+    if(outfile == NULL)
+	    cout << "ERRROR OPENING OUTPUT FILE FOR STAT WRITING" << endl;
+    outfile << "GPU," << rows << "," << cols << "," << "," << block_size << "," << stop << endl;
+    fclose(outfile);
 	
 	
 	
@@ -551,33 +574,6 @@ int main(int argc, char const *argv[]) {
     cv::Mat output_s_gpu(img.rows, img.cols, CV_8UC4, (void*)d_o_img); // generate gpu output image.
     cout << "write image" << endl;
     suc_gpu = cv::imwrite(outfile.c_str(), output_s_gpu);
-    if(!suc_gpu){
-        std::cerr << "Couldn't write gpu image!\n";
-        exit(1);
-    }
-
-
-
-
-
-    std::cout << "starting GPU k means shared...\n";
-
-    start = high_resolution_clock::now();
-    your_kmeans_shared(rows, cols, numclasses, predictions_gpu_shared, centroids_gpu_shared, h_in_img, max_its);
-    stop = high_resolution_clock::now();
-    duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
-    printf("The execution time in microseconds for GPU implementation: ");
-    std::cout << duration;
-    printf("\n");
-
-    //generate output image
-
-    cout << "make segment gpu" << endl;
-    make_segment(predictions_gpu_shared, h_o_shared, rows, cols);
-    cout << "segment gpu" << endl;
-    cv::Mat output_s_gpu_shared(img.rows, img.cols, CV_8UC4, (void*)h_o_shared); // generate gpu output image.
-    cout << "write image" << endl;
-    bool suc_gpu_shared = cv::imwrite(outfile_shared.c_str(), output_s_gpu_shared);
     if(!suc_gpu){
         std::cerr << "Couldn't write gpu image!\n";
         exit(1);
