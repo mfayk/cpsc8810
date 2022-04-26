@@ -1,0 +1,258 @@
+rm *.o kmeans
+g++ -c -std=c++17 -g -O3 -Wall  -I /software/spackages/linux-centos8-x86_64/gcc-8.3.1/cuda-10.2.89-bsydnscqeeeoytpr2buzenenj2uex3ux/lib64/ -I "/software/spackages/linux-centos8-x86_64/gcc-8.3.1/opencv-4.2.0-ox4iebcjsf4q6r2m2jxlw7hdcpvtvgqu/include/opencv4" main.cpp
+main.cpp: In function 'void checkApproxResults(unsigned char*, unsigned char*, size_t)':
+main.cpp:32:22: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
+   32 |     for(int i = 0; i < numElems; i++){
+      |                    ~~^~~~~~~~~~
+main.cpp: In function 'void serial_kmeans(int, int, int, int*, std::vector<float>*, uchar4*, int)':
+main.cpp:77:9: warning: unused variable 'chosenclass' [-Wunused-variable]
+   77 |     int chosenclass;
+      |         ^~~~~~~~~~~
+main.cpp:81:9: warning: unused variable 'pixelClass' [-Wunused-variable]
+   81 |     int pixelClass, oldClass;
+      |         ^~~~~~~~~~
+main.cpp: In function 'void shared_kmeans(int, int, int, int*, std::vector<float>*, uchar4*, int, const string&, int)':
+main.cpp:249:20: warning: unused variable 'h_i_img' [-Wunused-variable]
+  249 |  uchar4 *h_o_img, *h_i_img;
+      |                    ^~~~~~~
+main.cpp: In function 'void global_kmeans(int, int, int, int*, std::vector<float>*, uchar4*, int, const string&, int)':
+main.cpp:269:20: warning: unused variable 'h_i_img' [-Wunused-variable]
+  269 |  uchar4 *h_o_img, *h_i_img;
+      |                    ^~~~~~~
+main.cpp: In function 'void create_centroids(std::string, int)':
+main.cpp:376:13: warning: unused variable 'rand_class' [-Wunused-variable]
+  376 |         int rand_class;
+      |             ^~~~~~~~~~
+main.cpp:378:13: warning: unused variable 'predictions_gpu' [-Wunused-variable]
+  378 |         int predictions_gpu[numPixels];
+      |             ^~~~~~~~~~~~~~~
+main.cpp:381:13: warning: unused variable 'predictions_gpu_shared' [-Wunused-variable]
+  381 |         int predictions_gpu_shared[numPixels];
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:317:24: warning: variable 'h_o_img' set but not used [-Wunused-but-set-variable]
+  317 |     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers
+      |                        ^~~~~~~
+main.cpp:317:34: warning: unused variable 'r_o_img' [-Wunused-variable]
+  317 |     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers
+      |                                  ^~~~~~~
+main.cpp:317:44: warning: variable 'h_o_shared' set but not used [-Wunused-but-set-variable]
+  317 |     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers
+      |                                            ^~~~~~~~~~
+main.cpp:318:13: warning: unused variable 'd_in_img' [-Wunused-variable]
+  318 |     uchar4 *d_in_img, *d_o_img;
+      |             ^~~~~~~~
+main.cpp:318:24: warning: variable 'd_o_img' set but not used [-Wunused-but-set-variable]
+  318 |     uchar4 *d_in_img, *d_o_img;
+      |                        ^~~~~~~
+main.cpp:319:13: warning: variable 'h_o_img_gpu' set but not used [-Wunused-but-set-variable]
+  319 |     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
+      |             ^~~~~~~~~~~
+main.cpp:319:27: warning: variable 'h_o_img_gpu_shared' set but not used [-Wunused-but-set-variable]
+  319 |     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
+      |                           ^~~~~~~~~~~~~~~~~~
+main.cpp:324:9: warning: unused variable 'classes' [-Wunused-variable]
+  324 |     int classes[2] = {1,2};
+      |         ^~~~~~~
+main.cpp: In function 'void serial_kmeans(int, int, int, int*, std::vector<float>*, uchar4*, int)':
+main.cpp:122:31: warning: 'min_loc' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  122 |                     centroids[min_loc].at(0) += (float)h_img[i*cols+j].x; //add the blue
+      |                               ^~~~~~~
+main.cpp:107:39: warning: 'min_dst' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  107 |                     if(k == 0 || dist < min_dst)
+      |                                  ~~~~~^~~~~~~~~
+nvcc  -c blur_kernels.cu 
+blur_kernels.cu(35): warning: variable "chosenclass" was declared but never referenced
+
+blur_kernels.cu(47): warning: variable "s_idx" was declared but never referenced
+
+blur_kernels.cu(103): warning: variable "chosenclass" was declared but never referenced
+
+blur_kernels.cu(127): warning: variable "chosenclass" was declared but never referenced
+
+blur_kernels.cu(178): warning: variable "chosenclass" was declared but never referenced
+
+blur_kernels.cu(179): warning: variable "pixelClass" was declared but never referenced
+
+blur_kernels.cu(180): warning: variable "oldClass" was declared but never referenced
+
+blur_kernels.cu(240): warning: variable "new_predictions" was declared but never referenced
+
+blur_kernels.cu(249): warning: variable "distances_d" was declared but never referenced
+
+blur_kernels.cu(347): warning: variable "new_predictions" was declared but never referenced
+
+blur_kernels.cu(356): warning: variable "distances_d" was declared but never referenced
+
+g++ -o kmeans main.o blur_kernels.o -I /software/spackages/linux-centos8-x86_64/gcc-8.3.1/cuda-10.2.89-bsydnscqeeeoytpr2buzenenj2uex3ux/lib64/ -L /software/spackages/linux-centos8-x86_64/gcc-8.3.1/cuda-10.2.89-bsydnscqeeeoytpr2buzenenj2uex3ux/lib64/ -lcuda -lcudart -L /software/spackages/linux-centos8-x86_64/gcc-8.3.1/opencv-4.2.0-ox4iebcjsf4q6r2m2jxlw7hdcpvtvgqu/lib64 -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=1gb,walltime=06:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:17,mem=385968kb,walltime=00:00:19,ncpus=4,cpupercent=0,vmem=812436kb
+ 
+ 

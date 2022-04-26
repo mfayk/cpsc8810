@@ -6,11 +6,8 @@ OPENCV_LD_FLAGS = -L $(OPENCV_ROOT)/lib64 -lopencv_core -lopencv_imgproc -lopenc
 
 CUDA_INCLUDEPATH=/software/spackages/linux-centos8-x86_64/gcc-8.3.1/cuda-10.2.89-bsydnscqeeeoytpr2buzenenj2uex3ux/lib64/
 
-
 GCC_OPTS=-std=c++17 -g -O3 -Wall 
 CUDA_LD_FLAGS=-L $(CUDA_INCLUDEPATH) -lcuda -lcudart
-
-
 
 final: main.o blur.o
 	g++ -o kmeans main.o blur_kernels.o -I $(CUDA_INCLUDEPATH) $(CUDA_LD_FLAGS) $(OPENCV_LD_FLAGS)

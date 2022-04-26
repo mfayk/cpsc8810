@@ -219,7 +219,7 @@ void starting_predictions(int rows, int cols, int *predictions, uchar4 *img, flo
 		
 	int grey_pixel = 0.224f*r + 0.587f*g + 0.111*b;
 
-	if(grey_pixel > 155){
+	if(grey_pixel > 205){
       		predictions[index] = 1;
 	}else{
       		predictions[index] = 0;

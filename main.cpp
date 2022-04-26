@@ -243,44 +243,44 @@ int find_horizon(int rows, int cols, int *img){
     return i_max;
 }
 
-void gray_segment(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile, int block){
+void shared_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile, int block){
 
 	cv::Mat imrgba, o_img, h_out_img;
 	uchar4 *h_o_img, *h_i_img;
 	h_out_img.create(rows, cols, CV_8UC4);
-    	
 	h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
-	std::string modded_outfile = std::string("_cropped") + outfile.c_str();
 
-
-	cout << "test 2" << endl;
-//SERIAL
-	//serial_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
-
-//SHARED MEMORY
-    std::cout << "starting GPU k means shared...\n";
-
-    
     your_kmeans_shared(rows, cols, numclasses, predictions, centroids, h_img, max_its, block);
-    //your_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its);
-
-    //generate output image
-
-
-/////////////////////////////////////////
-
-
-
-	//generate output image
-    
 	make_segment(predictions, h_o_img, rows, cols);
+
+    std::string modded_outfile = std::string("sharedKMeans_") + outfile.c_str();
 	cv::Mat output_s(rows, cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
 	cout << "write image" << endl;
-    	bool suc = cv::imwrite(modded_outfile.c_str(), output_s);
-    	if(!suc){
-        	std::cerr << "Couldn't write serial image!\n";
-        	exit(1);
-    	}
+    bool suc = cv::imwrite(modded_outfile.c_str(), output_s);
+    if(!suc){
+        std::cerr << "Couldn't write serial image!\n";
+        exit(1);
+    }
+}
+
+void global_kmeans(int rows, int cols, int numclasses, int *predictions, vector<float> *centroids, uchar4 *h_img, int max_its, const std::string &outfile, int block){
+
+	cv::Mat imrgba, o_img, h_out_img;
+	uchar4 *h_o_img, *h_i_img;
+	h_out_img.create(rows, cols, CV_8UC4);
+	h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+
+    your_kmeans(rows, cols, numclasses, predictions, centroids, h_img, max_its, block);
+	make_segment(predictions, h_o_img, rows, cols);
+
+    std::string modded_outfile = std::string("globalKMeans_") + outfile.c_str();
+	cv::Mat output_s(rows, cols, CV_8UC4, (void*)h_o_img); // generate serial output image.
+	cout << "write image" << endl;
+    bool suc = cv::imwrite(modded_outfile.c_str(), output_s);
+    if(!suc){
+        std::cerr << "Couldn't write serial image!\n";
+        exit(1);
+    }
 }
 
 
@@ -313,7 +313,7 @@ void create_centroids(const std::string path, int block_size){
 
     cv::Mat img, imgrgba;
     cout << "start files" << endl;
- //////////////////////////////   
+
     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers  
     uchar4 *d_in_img, *d_o_img;
     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
@@ -330,15 +330,9 @@ void create_centroids(const std::string path, int block_size){
     std::string reference;
     std::string outfile_shared;
     std::string gray;
-    
-    
- //////////////////
-    
-    
+
     for (const auto & entry : std::filesystem::directory_iterator(path)){
-
-	cout << entry.path().string() << endl;
-
+        cout << entry.path().string() << endl;
         img = cv::imread(entry.path().c_str(), cv::IMREAD_COLOR);
         cout << " read img "<< endl;
         if(img.empty()){
@@ -346,111 +340,62 @@ void create_centroids(const std::string path, int block_size){
             exit(1);
         }
 
-    
-    int rows = img.rows;
-    int cols = img.cols;
+        int rows = img.rows;
+        int cols = img.cols;
 
-    auto start = high_resolution_clock::now();
-
-    rows = crop_imgs(rows,cols,img);
-    cout << "cropped rows: " << endl;
+        //rows = crop_imgs(rows,cols,img);
+        //cout << "cropped rows: " << endl;
 
 
-    cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
-    h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+        cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+        h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
 
-	cv::cvtColor(img, imrgba, cv::COLOR_BGR2RGBA);
+        cv::cvtColor(img, imrgba, cv::COLOR_BGR2RGBA);
 
-    	o_img.create(img.rows, img.cols, CV_8UC4);
-	h_out_img.create(img.rows, img.cols, CV_8UC4);
-    	h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
-    	d_out_img.create(img.rows, img.cols, CV_8UC4);
-    	r_out_img.create(img.rows, img.cols, CV_8UC4);
-    	h_out_img_gpu.create(img.rows, img.cols, CV_8UC4);
-    	h_out_img_gpu_shared.create(img.rows, img.cols, CV_8UC4);
+        o_img.create(img.rows, img.cols, CV_8UC4);
+        h_out_img.create(img.rows, img.cols, CV_8UC4);
+        h_out_img_shared.create(img.rows, img.cols, CV_8UC4);
+        d_out_img.create(img.rows, img.cols, CV_8UC4);
+        r_out_img.create(img.rows, img.cols, CV_8UC4);
+        h_out_img_gpu.create(img.rows, img.cols, CV_8UC4);
+        h_out_img_gpu_shared.create(img.rows, img.cols, CV_8UC4);
 
-    	h_in_img = (uchar4 *)imrgba.ptr<unsigned char>(0);
-    	h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
-    	h_o_shared = (uchar4 *)h_out_img_shared.ptr<unsigned char>(0);
-    	d_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
-    	h_o_img_gpu = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
-    	h_o_img_gpu_shared = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
+        h_in_img = (uchar4 *)imrgba.ptr<unsigned char>(0);
+        h_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+        h_o_shared = (uchar4 *)h_out_img_shared.ptr<unsigned char>(0);
+        d_o_img = (uchar4 *)h_out_img.ptr<unsigned char>(0);
+        h_o_img_gpu = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
+        h_o_img_gpu_shared = (uchar4 *) h_out_img_gpu.ptr<unsigned char>(0);
 
-    	const size_t  numPixels = img.rows*img.cols;
-    	cout << "num cols: " << cols << endl;
-
-
-	int predictions[numPixels];
-    	vector<float> centroids[numclasses];
-    	int rand_class;
-
-    	int predictions_gpu[numPixels];
-    	vector<float> centroids_gpu[numclasses];
-
-    	int predictions_gpu_shared[numPixels];
-    	vector<float> centroids_gpu_shared[numclasses];
+        const size_t  numPixels = img.rows*img.cols;
+        cout << "num cols: " << cols << endl;
 
 
-	/*
+        int predictions[numPixels];
+        vector<float> centroids[numclasses];
+        int rand_class;
 
-	for(int i = 0; i < numclasses; i++){
-        	for(int j = 0; j < 4; j++){
-            		centroids[i].push_back(0.0);
-            		centroids_gpu[i].push_back(0.0);
-            		centroids_gpu_shared[i].push_back(0.0);
-        	}
-    	}
+        int predictions_gpu[numPixels];
+        vector<float> centroids_gpu[numclasses];
 
-    	// Traversing of vectors v to print
-    	// elements stored in it
-    	for(int i = 0; i < numclasses; i++) {
-        	for(auto it = centroids[i].begin();
-             		it != centroids[i].end(); it++) {
-	        }
-    	}
+        int predictions_gpu_shared[numPixels];
+        vector<float> centroids_gpu_shared[numclasses];
 
-  	//set up initital predicitons for each pixel
-	////////////////////////////////////////////////////////////////////////////////////
-	//PREDICTIONS
-    	srand(time(0));
-    	int g_class;
-    	for(int i = 0; i < rows; i++){
-        	for(int j = 0; j < cols; j++){
-            g_class = (float)(rand() % 2 + 0);
-            predictions[i*img.cols+j] = g_class;
+        auto start = high_resolution_clock::now();
+        global_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
+        auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
+        cout << "timing: " << stop << endl; 
+        std::ofstream stats;
+        stats.open("metrics_uncropped.txt", ios::out | ios::app);
+        stats << "KMeans_Global," << rows << "," << cols << "," << block_size << "," << stop << endl;
 
-            centroids[g_class].at(0) += h_in_img[i*cols+j].x;
-            centroids[g_class].at(1) += h_in_img[i*cols+j].y;
-            centroids[g_class].at(2) += h_in_img[i*cols+j].z;
-            centroids[g_class].at(3) += 1;
 
-        	}
-    	}
-
-	// Traversing of vectors v to print
-    	// elements stored in it
-    	for (int i = 0; i < numclasses; i++) {
-        	// Displaying element at each column,
-        	// begin() is the starting iterator,
-        	// end() is the ending iterator
-        	for (auto it = centroids[i].begin();
-             	it != centroids[i].end(); it++) {
-
-            // (*it) is used to get the
-            // value at iterator it
-        	}
-    	}
-
-        */
-
-    gray_segment(rows, cols, numclasses, predictions, centroids, h_in_img, max_its,entry.path().filename().string(),block_size);	
-
-    auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
-    cout << "timing: " << stop << endl; 
-    std::ofstream stats;
-    stats.open("metrics.txt", ios::out | ios::app);
-    stats << "GPU," << rows << "," << cols << "," << block_size << "," << stop << endl;
-    stats.close();
+        start = high_resolution_clock::now();
+        shared_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
+        stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
+        cout << "timing: " << stop << endl; 
+        stats << "KMeans_Shared," << rows << "," << cols << "," << block_size << "," << stop << endl;
+        stats.close();
     }
 }
 
@@ -459,7 +404,8 @@ int main(int argc, char const *argv[]) {
     std::string path = "/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images";
     int block_size = atoi(argv[1]);
     create_centroids(path.c_str(),block_size);
-    int rows, cols, numClasses;
+
+    cout << "completed" << endl;
 
     return 0;
 }

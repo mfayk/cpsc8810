@@ -1,0 +1,8153 @@
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 322027
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31733
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 887219
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 30815
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.2704e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 346862
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 43058
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 46344
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23709
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.2704e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 159809
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 124638
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 655749
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+converged
+write image
+timing: 36623
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.2704e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1247222
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31576
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1404430
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 35491
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.2704e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 11902
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29161
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1498424
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 53919
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.2704e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1456307
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 48450
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.01614e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 91982
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10796
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 330424
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31316
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 883694
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 30808
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.30141e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 365213
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 43055
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 45482
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23740
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.30141e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 158774
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 100965
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 655572
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+converged
+write image
+timing: 36520
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.30142e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1245383
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31094
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1405066
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 35550
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.30142e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 11818
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29135
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1497643
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 53011
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.30142e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1457066
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 48291
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+9.0919e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 92580
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10724
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 307971
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31103
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 883597
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 30156
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.25815e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 346589
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 43362
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 45584
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23689
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.25815e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 159155
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 111568
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 656126
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+converged
+write image
+timing: 36784
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.25815e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1245741
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 31100
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1404988
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 35859
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.25815e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 11750
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29236
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1498583
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 52990
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.25815e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1457496
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 49067
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+8.98629e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 92302
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10835
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 325480
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+converged
+write image
+timing: 27808
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 867012
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25872
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.49978e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 331477
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 36293
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44987
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 19699
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.49978e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 156877
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 109048
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639598
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+converged
+write image
+timing: 28801
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.49979e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1226927
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25485
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1383661
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29326
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.49979e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10838
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24299
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1467847
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 43723
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.49979e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1427272
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 41187
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.17746e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 87186
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 8866
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 306546
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 26095
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 866636
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25800
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.06492e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 337790
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+converged
+write image
+timing: 38527
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 45179
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 19707
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.06492e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 163740
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+converged
+write image
+timing: 101925
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639771
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 31060
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.06494e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1227250
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25510
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1382832
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29498
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.06494e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10754
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23999
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1468924
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 43813
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.06494e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1427730
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 40117
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.68706e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 87376
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 9112
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 306326
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 26066
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 866596
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25759
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.70149e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 331666
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+converged
+write image
+timing: 38499
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44811
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 19903
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.70149e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 155372
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+converged
+write image
+timing: 87298
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639348
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+converged
+write image
+timing: 38102
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.70149e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1226928
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25717
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1382456
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 29708
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.70149e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10862
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24390
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1468852
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 44127
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.70149e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1427557
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 39957
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+4.66993e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 87933
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 8950
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 306591
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25044
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 865820
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24832
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.80353e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 352998
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 29100
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44195
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 19096
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.80353e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 154180
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+converged
+write image
+timing: 77748
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 638589
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25047
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.80354e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1225870
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24574
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1381838
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27999
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.80354e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10754
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 22811
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1465996
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 41802
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.80354e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1425600
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 38323
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.13609e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 88211
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 8815
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 327111
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25357
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 865986
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25059
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.78477e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 449366
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 31830
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 45222
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 18946
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.78477e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 155712
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 65629
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639167
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 29271
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.78478e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1227173
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24977
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1382393
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27845
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.78478e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 11135
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23036
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1466093
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 42386
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+3.78478e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1426568
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 38741
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.114e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 86932
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 8604
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 305574
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25100
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 865799
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 25640
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.03804e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 332414
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 31441
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44320
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 18931
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.03804e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 162312
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 68603
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639116
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 28204
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.03806e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1226857
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24409
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1382227
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27976
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.03806e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10522
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23330
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1465587
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 41851
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.03806e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1426410
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 38803
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.43634e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 88010
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 8694
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 325009
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27247
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+converged
+write image
+timing: 431680
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27479
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.43157e-35 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 74440
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 30707
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44331
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 20530
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.43157e-35 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 154788
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 64366
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 640754
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 26369
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.4316e-35 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1226725
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24253
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1383627
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27652
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.4316e-35 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 10908
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 23079
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1467382
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 45704
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.4316e-35 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1427144
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 42636
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.82815e-38 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+converged
+write image
+timing: 35012
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 9376
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 328157
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27526
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+converged
+write image
+timing: 553466
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27936
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.66812e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 338201
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 30909
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44382
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 20762
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.66812e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 153832
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+converged
+write image
+timing: 74771
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 641249
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 26498
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.66812e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1226912
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24092
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1382880
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27454
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.66812e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 12382
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 22713
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1467463
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 45828
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+5.66812e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1428850
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 43407
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.59017e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 18733
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 9396
+completed
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 785
+horz row 785
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+converged
+write image
+timing: 305632
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27543
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1005.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 791
+horz row 791
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 33664
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27628
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1599.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.44676e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 365753
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 30580
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_635.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 904
+horz row 904
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+converged
+write image
+timing: 44689
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 20694
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_887.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 165
+horz row 165
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.44676e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 153319
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+converged
+write image
+timing: 66143
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_770.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 786
+horz row 786
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 639573
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 26353
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_462.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 779
+horz row 779
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.44679e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1228323
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 24081
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_461.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 708
+horz row 708
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1384966
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 27600
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_460.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 807
+horz row 807
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.44679e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 11090
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 22701
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_394.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 475
+horz row 475
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1467521
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 45439
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_385.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 535
+horz row 535
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+6.44679e-34 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+starting iteration 12
+starting iteration 13
+starting iteration 14
+starting iteration 15
+starting iteration 16
+starting iteration 17
+starting iteration 18
+starting iteration 19
+starting iteration 20
+starting iteration 21
+starting iteration 22
+starting iteration 23
+starting iteration 24
+starting iteration 25
+starting iteration 26
+starting iteration 27
+starting iteration 28
+starting iteration 29
+starting iteration 30
+starting iteration 31
+starting iteration 32
+starting iteration 33
+starting iteration 34
+starting iteration 35
+starting iteration 36
+starting iteration 37
+starting iteration 38
+starting iteration 39
+starting iteration 40
+starting iteration 41
+starting iteration 42
+starting iteration 43
+starting iteration 44
+starting iteration 45
+starting iteration 46
+starting iteration 47
+starting iteration 48
+starting iteration 49
+write image
+timing: 1427755
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 42604
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_761.jpg
+ read img 
+start crop
+rows: 1200, cols: 1920
+max_i = 1077
+horz row 1077
+cropped rows: 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+1.78027e-37 0 3.58732e-43 2.52085e-35 
+0 0 128.859 4.00303e-34 
+loop start gpu
+starting iteration 0
+starting iteration 1
+starting iteration 2
+starting iteration 3
+starting iteration 4
+starting iteration 5
+starting iteration 6
+starting iteration 7
+starting iteration 8
+starting iteration 9
+starting iteration 10
+starting iteration 11
+converged
+write image
+timing: 24192
+loop start gpu
+starting iteration 0
+starting iteration 1
+converged
+write image
+timing: 9328
+completed
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=1gb,walltime=06:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:01:45,mem=104328kb,walltime=00:01:48,ncpus=4,cpupercent=93,vmem=14652400kb
+ 
+ 

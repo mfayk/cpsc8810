@@ -1,0 +1,17 @@
+/var/spool/pbs/mom_priv/jobs/4868596.pbs02.SC: line 21: [4: command not found
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=1gb,walltime=06:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:01,mem=20916kb,walltime=00:00:03,ncpus=4,cpupercent=0,vmem=14008kb
+ 
+ 
