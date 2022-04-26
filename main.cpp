@@ -343,8 +343,8 @@ void create_centroids(const std::string path, int block_size){
         int rows = img.rows;
         int cols = img.cols;
 
-        //rows = crop_imgs(rows,cols,img);
-        //cout << "cropped rows: " << endl;
+        rows = crop_imgs(rows,cols,img);
+        cout << "cropped rows: " << endl;
 
 
         cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);

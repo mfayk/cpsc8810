@@ -1,0 +1,172 @@
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+start files
+/scratch1/mfaykus/cpsc8810/gray_depth_img/ppt_images/_1302.jpg
+ read img 
+num cols: 1920
+Elements at index 0: 
+Elements at index 1: 
+classes 2
+0 0 3.39003e+12 1.41417e+19 
+0 0 2.15102e+11 3284.08 
+loop start gpu
+starting iteration 0
+CUDA error at:: blur_kernels.cu:315
+an illegal memory access was encountered cudaGetLastError()
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=1gb,walltime=06:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:07,mem=87880kb,walltime=00:00:09,ncpus=4,cpupercent=0,vmem=14008kb
+ 
+ 
