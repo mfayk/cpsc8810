@@ -2,14 +2,14 @@
 
 #PBS -N CPSC8810
 #PBS -l  select=1:ncpus=4:ngpus=2:gpu_model=p100,walltime=06:00:00
-#PBS -M mikailg@g.clemson.edu
+#PBS -M mfaykus@g.clemson.edu
 #PBS -j oe
 
 module load gcc/9.3.0
 module load opencv/4.2.0-gcc
 module load cuda/11.4.1-gcc/9.3.0
 
-cd /home/mikailg/test/cpsc8810/
+cd /scratch1/mfaykus/cpsc8810/
 
 i=0
 blockSize=4

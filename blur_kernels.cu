@@ -219,11 +219,31 @@ void starting_predictions(int rows, int cols, int *predictions, uchar4 *img, flo
 		
 	int grey_pixel = 0.224f*r + 0.587f*g + 0.111*b;
 
+  
 	if(grey_pixel > 205){
       		predictions[index] = 1;
 	}else{
       		predictions[index] = 0;
 	}
+
+
+  if(grey_pixel < 80){
+    predictions[index] = 1;
+  }
+  if(grey_pixel > 80 ){
+    predictions[index] = 2;
+  }
+  if(grey_pixel > 150 ){
+    predictions[index] = 3;
+  }
+/*  if(grey_pixel > 200 ){
+    predictions[index] = 4;
+  }
+  if(grey_pixel > 230 ){
+    predictions[index] = 5;
+  }
+*/
+
 
 	pixelClass = predictions[index];
 

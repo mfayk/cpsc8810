@@ -1,0 +1,29 @@
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 17: cd: /home/mikailg/test/cpsc8810/: Permission denied
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+/var/spool/pbs/mom_priv/jobs/4868808.pbs02.SC: line 25: ./kmeans: No such file or directory
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=1gb,walltime=06:00:00,ncpus=4
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:03,mem=61092kb,walltime=00:00:04,ncpus=4,cpupercent=0,vmem=14008kb
+ 
+ 

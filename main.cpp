@@ -217,7 +217,7 @@ int find_horizon(int rows, int cols, int *img){
         curr_row_avg /= cols; //cout << "row: " << i << ", curr avg: " << curr_row_avg << ", ";
         diff = abs(curr_row_avg - prev_row_avg);
         //cout << "prev avg: " << prev_row_avg << ", diff: " << diff << "\n";
-        if(diff > 1 && i > 15 && i < 1185) {
+        if(diff > 1 && i > 15 && i < 785) {
             //cout << "condition met.. return i: " << i << "\n";
             if(diff > max_diff){
                 max_diff = diff;
@@ -284,9 +284,21 @@ void global_kmeans(int rows, int cols, int numclasses, int *predictions, vector<
 }
 
 
-int crop_imgs(int rows, int cols, cv::Mat org_img){
-    cv::Mat img, imgrgba;
+int crop_imgs(int rows, int cols, cv::Mat org_img, const std::string &infile){
+    cv::Mat img, imgrgba, color_img;
     uchar4 *h_in_img;
+    
+    std::string new_path = "/scratch1/mfaykus/cpsc8810/org_img/";
+    std::string new_file = infile;
+
+    cout << "before change: " << new_file << endl;
+
+
+    new_file.insert(0,new_path);
+
+
+    cout << new_file << endl;
+
     cout << "start crop" << endl;
 
     img = org_img;
@@ -298,30 +310,48 @@ int crop_imgs(int rows, int cols, cv::Mat org_img){
     int horizon_row = find_horizon(rows, cols, grayImg);
 
     cout << "horz row " << horizon_row << endl;
-	 
-	cv::Mat cropped_image = org_img(cv::Range(horizon_row,1200), cv::Range(0,1920));
+
+
+    color_img =  cv::imread(new_file, cv::IMREAD_COLOR);    
+    cv::Mat cropped_image = color_img(cv::Range(horizon_row,1200), cv::Range(0,1920));
 
     org_img = cropped_image;
 	
 
     rows = rows - horizon_row;
 
+
+    img = org_img;
+    cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
+    h_in_img = (uchar4 *)imgrgba.ptr<unsigned char>(0);
+
+
+    std::string modded_outfile = std::string("cropCheck_") + infile.c_str();
+        cv::Mat output_s(rows, cols, CV_8UC4, (void*)h_in_img); // generate serial output image.
+        cout << "write image" << endl;
+    bool suc = cv::imwrite(modded_outfile.c_str(), output_s);
+    if(!suc){
+        std::cerr << "Couldn't write serial image!\n";
+        exit(1);
+    }
+
+
     return rows;
 }
 
 void create_centroids(const std::string path, int block_size){
 
-    cv::Mat img, imgrgba;
+    cv::Mat img, imgrgba, org_img;
     cout << "start files" << endl;
 
     uchar4 *h_in_img, *h_o_img, *r_o_img, *h_o_shared; // pointers to the actual image input and output pointers  
     uchar4 *d_in_img, *d_o_img;
     uchar4 *h_o_img_gpu, *h_o_img_gpu_shared;
 
-    int numclasses = 2;
+    int numclasses = 3;
     int max_its = 50;
 
-    int classes[2] = {1,2};
+    int classes[3] = {1,2,3};
 
     cv::Mat imrgba, o_img, h_out_img, h_out_img_shared, r_out_img, h_out_img_gpu, h_out_img_gpu_shared, d_out_img, imgray;
 
@@ -343,8 +373,10 @@ void create_centroids(const std::string path, int block_size){
         int rows = img.rows;
         int cols = img.cols;
 
-        //rows = crop_imgs(rows,cols,img);
-        //cout << "cropped rows: " << endl;
+
+
+        rows = crop_imgs(rows,cols,img,entry.path().filename().string());
+        cout << "cropped rows: " << endl;
 
 
         cv::cvtColor(img, imgrgba, cv::COLOR_BGR2RGBA);
@@ -381,6 +413,7 @@ void create_centroids(const std::string path, int block_size){
         int predictions_gpu_shared[numPixels];
         vector<float> centroids_gpu_shared[numclasses];
 
+/*
         auto start = high_resolution_clock::now();
         global_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
         auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
@@ -388,14 +421,14 @@ void create_centroids(const std::string path, int block_size){
         std::ofstream stats;
         stats.open("metrics_uncropped.txt", ios::out | ios::app);
         stats << "KMeans_Global," << rows << "," << cols << "," << block_size << "," << stop << endl;
+*/
 
-
-        start = high_resolution_clock::now();
+        auto start = high_resolution_clock::now();
         shared_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
-        stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
+        auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
         cout << "timing: " << stop << endl; 
-        stats << "KMeans_Shared," << rows << "," << cols << "," << block_size << "," << stop << endl;
-        stats.close();
+        //stats << "KMeans_Shared," << rows << "," << cols << "," << block_size << "," << stop << endl;
+        //stats.close();
     }
 }
 
