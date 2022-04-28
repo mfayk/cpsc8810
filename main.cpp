@@ -413,7 +413,7 @@ void create_centroids(const std::string path, int block_size){
         int predictions_gpu_shared[numPixels];
         vector<float> centroids_gpu_shared[numclasses];
 
-/*
+
         auto start = high_resolution_clock::now();
         global_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
         auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
@@ -421,14 +421,14 @@ void create_centroids(const std::string path, int block_size){
         std::ofstream stats;
         stats.open("metrics_uncropped.txt", ios::out | ios::app);
         stats << "KMeans_Global," << rows << "," << cols << "," << block_size << "," << stop << endl;
-*/
 
-        auto start = high_resolution_clock::now();
+
+        start = high_resolution_clock::now();
         shared_kmeans(rows, cols, numclasses, predictions, centroids, h_in_img, max_its, entry.path().filename().string(), block_size);	
-        auto stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
+        stop = std::chrono::duration_cast<std::chrono::microseconds>(high_resolution_clock::now() - start).count();
         cout << "timing: " << stop << endl; 
-        //stats << "KMeans_Shared," << rows << "," << cols << "," << block_size << "," << stop << endl;
-        //stats.close();
+        stats << "KMeans_Shared," << rows << "," << cols << "," << block_size << "," << stop << endl;
+        stats.close();
     }
 }
 

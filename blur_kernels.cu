@@ -316,11 +316,11 @@ void your_kmeans(int rows, int cols, int numclasses, int *predictions, vector<fl
   checkCudaErrors(cudaMalloc((void**)&d_img, sizeof(uchar4)*rows*cols));
 
   checkCudaErrors(cudaMemcpy(d_img, h_img, sizeof(uchar4)*rows*cols, cudaMemcpyHostToDevice)); 
-  checkCudaErrors(cudaMemcpy(centroids_d, centroids_arr, sizeof(float)*4*numclasses, cudaMemcpyHostToDevice));
-  checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
+  //checkCudaErrors(cudaMemcpy(centroids_d, centroids_arr, sizeof(float)*4*numclasses, cudaMemcpyHostToDevice));
+  //checkCudaErrors(cudaMemcpy(predictions_d, predictions, sizeof(int)*rows*cols, cudaMemcpyHostToDevice));
 
 
-  //starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img);
+  starting_predictions<<<gridSize, blockSize>>>(rows, cols, predictions_d, d_img, centroids_d,numclasses);
   cout << "loop start gpu" << endl;
 
     for(count=0; count<iterations; count++)
