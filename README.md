@@ -19,10 +19,8 @@ module load gcc/9.3.0
 then cd into the git folder
 
 run make
-
 ./kmenas thread_count
 
 
 example:
-
 ./kmeans 16
